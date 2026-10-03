@@ -1846,3 +1846,46 @@ input {
     margin: 0;
   }
 }
+
+
+/* ==========================================================
+   ANIMAÇÕES DE ENTRADA
+   ========================================================== */
+
+.has-reveal-animations .reveal {
+  opacity: 0;
+  transform: translate3d(0, 30px, 0);
+  transition:
+    opacity .65s cubic-bezier(.2, .7, .25, 1) var(--reveal-delay, 0ms),
+    transform .65s cubic-bezier(.2, .7, .25, 1) var(--reveal-delay, 0ms);
+}
+
+
+.has-reveal-animations .reveal-left {
+  transform: translate3d(-24px, 0, 0);
+}
+
+
+.has-reveal-animations .reveal-right {
+  transform: translate3d(24px, 0, 0);
+}
+
+
+.has-reveal-animations .reveal-scale {
+  transform: scale(.95);
+}
+
+
+.has-reveal-animations .reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+  .has-reveal-animations .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
