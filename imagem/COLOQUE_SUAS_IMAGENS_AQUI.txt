@@ -1,0 +1,9 @@
+Copie para esta pasta as imagens do seu projeto original:
+logo.png
+hero.png
+vistoria-entrada.png
+vistoria-saida.png
+vistoria-cautelar.png
+laudos.png
+
+O index.html já aponta para a pasta "imagem".

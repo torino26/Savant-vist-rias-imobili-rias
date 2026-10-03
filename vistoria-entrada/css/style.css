@@ -1,0 +1,85 @@
+*{
+  box-sizing:border-box;
+}
+
+html,body{
+  margin:0;
+  min-height:100%;
+  background:#091012;
+}
+
+body{
+  overflow-x:hidden;
+}
+
+/*
+  A arte original enviada tem 1536 x 1024.
+  Mantemos essa proporção para que posições, tamanhos, logo,
+  tipografia, imagens, ícones e espaçamentos fiquem idênticos.
+*/
+.design{
+  position:relative;
+  width:100%;
+  max-width:1536px;
+  margin:0 auto;
+  aspect-ratio:1536 / 1024;
+  background:#091012;
+}
+
+.design-image{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  display:block;
+  object-fit:contain;
+  user-select:none;
+  -webkit-user-drag:none;
+}
+
+/* Botão original: x=67..474, y=893..947 no arquivo de 1536x1024 */
+.whatsapp-hotspot{
+  position:absolute;
+  left:4.361979%;
+  top:87.207031%;
+  width:26.497396%;
+  height:5.273438%;
+  border-radius:10px;
+  cursor:pointer;
+}
+
+.whatsapp-hotspot:focus-visible{
+  outline:3px solid #fff;
+  outline-offset:3px;
+}
+
+/* Em telas mais largas, não esticamos além do design original. */
+@media (min-width:1537px){
+  body{
+    display:flex;
+    justify-content:center;
+  }
+}
+
+/*
+  No celular a composição inteira continua preservada.
+  O usuário vê exatamente a mesma arte, apenas reduzida.
+*/
+@media (max-width:700px){
+  .design{
+    min-width:100%;
+  }
+}
+
+
+/* Navegação para voltar ao site principal */
+.back-home{
+  position:fixed; top:14px; left:14px; z-index:1000;
+  padding:10px 14px; border:1px solid rgba(239,185,92,.75); border-radius:999px;
+  background:rgba(7,16,19,.90); color:#efb95c; text-decoration:none;
+  font:600 14px/1.2 Arial,sans-serif; backdrop-filter:blur(8px);
+}
+.back-home:hover{background:#efb95c;color:#081117;}
+@media(max-width:700px){
+  .back-home{top:8px;left:8px;padding:8px 11px;font-size:12px;}
+}

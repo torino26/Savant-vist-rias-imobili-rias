@@ -1,0 +1,159 @@
+============================================================
+SAVANT - SITE RESPONSIVO
+============================================================
+
+O SITE FOI FEITO PARA:
+- Desktop
+- Notebook
+- Tablet
+- Celular
+- Celular pequeno
+- Telas grandes
+
+------------------------------------------------------------
+PASTA DE IMAGENS
+------------------------------------------------------------
+
+Crie/coloque estas imagens dentro da pasta "images":
+
+images/logo.png
+images/hero.jpg
+images/vistoria-entrada.jpg
+images/vistoria-saida.jpg
+images/vistoria-cautelar.jpg
+images/laudos.jpg
+
+------------------------------------------------------------
+LOGO
+------------------------------------------------------------
+
+No HTML está assim:
+
+<img src="images/logo.png" alt="Savant Vistorias Imobiliárias">
+
+Então basta colocar sua logo com o nome:
+
+logo.png
+
+dentro da pasta:
+
+images
+
+------------------------------------------------------------
+IMAGEM GRANDE DO TOPO
+------------------------------------------------------------
+
+Nome:
+
+hero.jpg
+
+Código:
+
+<img
+  class="hero-image"
+  src="images/hero.jpg"
+  alt="Sala de apartamento moderno"
+>
+
+------------------------------------------------------------
+IMAGENS DOS SERVIÇOS
+------------------------------------------------------------
+
+1) Vistoria de Entrada:
+
+<img src="images/vistoria-entrada.jpg" alt="Vistoria de entrada">
+
+2) Vistoria de Saída:
+
+<img src="images/vistoria-saida.jpg" alt="Vistoria de saída">
+
+3) Vistoria Cautelar:
+
+<img src="images/vistoria-cautelar.jpg" alt="Vistoria cautelar">
+
+4) Laudos:
+
+<img src="images/laudos.jpg" alt="Laudos imobiliários">
+
+------------------------------------------------------------
+TAMANHO DAS LETRAS
+------------------------------------------------------------
+
+O site usa:
+
+html{
+  font-size:16px;
+}
+
+Esse é o tamanho base padrão.
+
+Os demais tamanhos usam rem e clamp() para ficarem
+proporcionais em qualquer tela.
+
+------------------------------------------------------------
+HOVER
+------------------------------------------------------------
+
+Já coloquei hover em:
+
+- menu
+- botão do orçamento
+- botões do hero
+- cards de números
+- cards "Por que escolher"
+- cards de serviços
+- imagens dos serviços
+- ícones
+- links
+- redes sociais
+- botão de newsletter
+
+------------------------------------------------------------
+WHATSAPP
+------------------------------------------------------------
+
+No index.html procure:
+
+https://wa.me/5544999999999
+
+e troque pelo número verdadeiro.
+
+Exemplo:
+
+https://wa.me/55449912345678
+
+------------------------------------------------------------
+IMPORTANTE SOBRE AS IMAGENS
+------------------------------------------------------------
+
+Não altere os nomes se não quiser mexer no código.
+
+Se sua imagem tiver outro nome, por exemplo:
+
+minha-sala.jpg
+
+troque:
+
+src="images/hero.jpg"
+
+por:
+
+src="images/minha-sala.jpg"
+
+------------------------------------------------------------
+ESTRUTURA
+------------------------------------------------------------
+
+savant_site_responsivo/
+|
+|-- index.html
+|-- style.css
+|-- LEIA-ME.txt
+|
+|-- images/
+    |-- logo.png
+    |-- hero.jpg
+    |-- vistoria-entrada.jpg
+    |-- vistoria-saida.jpg
+    |-- vistoria-cautelar.jpg
+    |-- laudos.jpg

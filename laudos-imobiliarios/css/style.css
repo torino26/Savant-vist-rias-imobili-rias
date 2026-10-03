@@ -1,0 +1,271 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  background: #071013;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.design {
+  position: relative;
+  width: 100%;
+  max-width: 1536px;
+  margin: 0 auto;
+  aspect-ratio: 1536 / 1024;
+  background: #071013;
+}
+
+.design-image {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+/*
+  Área clicável sobre o botão "Solicitar laudo pelo WhatsApp".
+  Mantém o botão visual exatamente como está na arte original.
+*/
+.whatsapp-hotspot {
+  position: absolute;
+  left: 5.15%;
+  top: 78.20%;
+  width: 21.35%;
+  height: 5.20%;
+  z-index: 10;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.whatsapp-hotspot:focus-visible {
+  outline: 3px solid #ffffff;
+  outline-offset: 3px;
+}
+
+.footer {
+  margin-top: 10px;
+
+  padding-top: 30px;
+
+  background: #060d12;
+
+  border-top: 1px solid rgba(255, 255, 255, .06);
+}
+
+
+.footer-grid {
+  display: grid;
+
+  grid-template-columns:
+    1.35fr .8fr 1fr 1.3fr 1.25fr;
+
+  gap: 30px;
+
+  padding-bottom: 30px;
+}
+
+
+.footer-logo {
+  display: block;
+
+  width: 145px;
+}
+
+
+.footer-logo img {
+  width: 100%;
+  height: auto;
+}
+
+
+.footer-about>p {
+  max-width: 220px;
+
+  margin-top: 15px;
+
+  color: #929b9f;
+
+  font-size: .72rem;
+}
+
+
+.socials {
+  display: flex;
+
+  gap: 9px;
+
+  margin-top: 16px;
+}
+
+
+.socials a {
+  width: 31px;
+  height: 31px;
+
+  display: grid;
+  place-items: center;
+
+  border: 1px solid rgba(255, 255, 255, .14);
+  border-radius: 50%;
+
+  color: #c3c8ca;
+
+  font-size: 1rem;
+
+  transition: .25s ease;
+}
+
+
+.socials a:hover {
+  background: var(--gold);
+
+  border-color: var(--gold);
+
+  color: #101416;
+
+  transform: translateY(-3px);
+}
+
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+
+  gap: 7px;
+}
+
+
+.footer-column h3 {
+  margin-bottom: 7px;
+
+  font-family: "Playfair Display", serif;
+
+  font-size: 1rem;
+}
+
+
+.footer-column a,
+.footer-column p {
+  color: #9ea6aa;
+
+  font-size: 1rem;
+
+  transition: .22s ease;
+}
+
+
+.footer-column a:hover {
+  color: var(--gold-light);
+
+  transform: translateX(3px);
+}
+
+
+.footer-column p i {
+  width: 18px;
+
+  color: var(--gold);
+}
+
+
+.newsletter form {
+  display: flex;
+
+  margin-top: 12px;
+
+  overflow: hidden;
+
+  border: 1px solid rgba(213, 154, 59, .45);
+  border-radius: 5px;
+}
+
+
+.newsletter input {
+  flex: 1;
+  min-width: 0;
+
+  padding: 10px 11px;
+
+  border: 0;
+  outline: 0;
+
+  background: transparent;
+
+  color: #fff;
+
+  font-size: 1rem;
+}
+
+
+.newsletter button {
+  width: 42px;
+
+  border: 0;
+
+  background: var(--gold);
+
+  color: #fff;
+
+  cursor: pointer;
+
+  transition: .22s ease;
+}
+
+
+.newsletter button:hover {
+  background: var(--gold-light);
+}
+
+
+.footer-bottom {
+  min-height: 56px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 20px;
+
+  border-top: 1px solid rgba(255, 255, 255, .06);
+
+  color: #707b80;
+
+  font-size: .66rem;
+}
+
+
+.footer-bottom i {
+  color: var(--gold);
+}
+
+@media (min-width: 1537px) {
+  body {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+
+/* Navegação para voltar ao site principal */
+.back-home{
+  position:fixed; top:14px; left:14px; z-index:1000;
+  padding:10px 14px; border:1px solid rgba(239,185,92,.75); border-radius:999px;
+  background:rgba(7,16,19,.90); color:#efb95c; text-decoration:none;
+  font:600 14px/1.2 Arial,sans-serif; backdrop-filter:blur(8px);
+}
+.back-home:hover{background:#efb95c;color:#081117;}
+@media(max-width:700px){
+  .back-home{top:8px;left:8px;padding:8px 11px;font-size:12px;}
+}
